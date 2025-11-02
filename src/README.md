@@ -38,7 +38,7 @@ const messageClient = createMessageClient(provider, {
 })
 
 // 3. Send a message!
-await messageClient.sendMessage(username, messageString);
+await messageClient.sendMessage(username, "Hello World!");
 ```
 
 Browser wallet support coming soon...
