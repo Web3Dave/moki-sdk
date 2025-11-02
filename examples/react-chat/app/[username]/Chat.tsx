@@ -1,12 +1,11 @@
 "use client";
 
-import { privateKeyToMokiAccount } from 'moki/accounts'
+import { privateKeyToMokiAccount } from 'moki-sdk/accounts'
 
-import { createMessageClient } from 'moki/messaging'
-import { createProvider } from 'moki/provider'
-import { TEST_NET_RPC } from "moki"
+import { createMessageClient } from 'moki-sdk/messaging'
+import { createProvider } from 'moki-sdk/provider'
 import styles from "./styles.module.css"
-import { MokiMessage } from 'moki/types/message';
+import { MokiMessage } from 'moki-sdk/types/message';
 import { useEffect, useMemo, useState } from 'react';
 import { MessageBubble } from '../../components/MessageBubble';
 import { FaChevronLeft } from "react-icons/fa";
@@ -15,7 +14,7 @@ import { getInsecureLocalStoragePrivateKey } from '../../functions/get-insecure-
 import dynamic from 'next/dynamic';
 import { TemporaryAccount } from '../../components/TemporaryAccount';
 
-const provider = createProvider(TEST_NET_RPC)
+const provider = createProvider("https://moki-node.pingify.io")
 
 function ChatPage({ username }: { username: string }) {
     const [messages, setMessages] = useState<MokiMessage[]>([]);

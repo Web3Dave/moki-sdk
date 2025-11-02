@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"example:browser-chat": "pnpm --filter react-browser-chat dev",
-		"dev": "pnpm --filter moki dev & pnpm --filter react-browser-chat dev",
+		"dev:react-chat": "pnpm --filter moki dev & pnpm --filter react-chat dev",
+		"dev": "pnpm --filter moki dev",
 		"build": "pnpm --filter moki build"
 	},
 	"devDependencies": {
