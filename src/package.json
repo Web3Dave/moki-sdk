@@ -14,10 +14,6 @@
       "types": "./_types/accounts/index.d.ts",
       "import": "./_esm/accounts/index.js"
     },
-    "./core": {
-      "types": "./_types/core/index.d.ts",
-      "import": "./_esm/core/index.js"
-    },
     "./data": {
       "types": "./_types/data/index.d.ts",
       "import": "./_esm/data/index.js"
