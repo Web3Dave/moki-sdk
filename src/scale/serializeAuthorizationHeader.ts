@@ -1,12 +1,5 @@
-import { Bytes, Struct } from "scale-ts";
 import { hexToBytes } from "viem/utils";
-
-// Define the SCALE codec for AuthorizationKeyPayload
-const authorizationKeyPayloadCodec = Struct({
-    authorization_type: Bytes(),    // Vec<u8> for dynamic length UTF-8 value
-    timestamp_id: Bytes(6),         // 6 bytes for big-endian timestamp
-    identity: Bytes(20),            // 20 bytes for identity
-});
+import { authorizationHeaderCodec } from "./codec/authorizationHeader";
 
 export function serializeAuthorizationHeader({
     authorizationType,
@@ -42,5 +35,5 @@ export function serializeAuthorizationHeader({
         identity: identityBytes,
     };
 
-    return authorizationKeyPayloadCodec.enc(payload);
+    return authorizationHeaderCodec.enc(payload);
 }

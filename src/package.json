@@ -18,6 +18,10 @@
       "types": "./_types/data/index.d.ts",
       "import": "./_esm/data/index.js"
     },
+    "./enum": {
+      "types": "./_types/enum/index.d.ts",
+      "import": "./_esm/enum/index.js"
+    },
     "./messaging": {
       "types": "./_types/messaging/index.d.ts",
       "import": "./_esm/messaging/index.js"
@@ -47,7 +51,8 @@
     "build": "tsc",
     "build:bundle": "tsup index.ts --format esm --dts --minify --external viem --external @noble/curves --external scale-ts",
     "dev": "tsc --watch",
-    "test": "echo \"Test script not configured yet\""
+    "test": "vitest --config ../vitest.config.ts",
+    "test:ui": "vitest --config ../vitest.config.ts --ui"
   },
   "packageManager": "pnpm@10.20.0",
   "keywords": [
@@ -62,6 +67,7 @@
     "viem": "^2.38.6"
   },
   "devDependencies": {
-    "tsup": "^8.5.0"
+    "tsup": "^8.5.0",
+    "vitest": "^4.0.6"
   }
 }

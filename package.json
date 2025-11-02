@@ -4,6 +4,7 @@
 		"dev": "pnpm --filter moki-sdk dev",
 		"build": "pnpm --filter moki-sdk build",
 		"build:bundle": "pnpm --filter moki-sdk build:bundle",
+		"test": "pnpm --filter moki-sdk test",
 		"size": "pnpm build && pnpm build:bundle && size-limit"
 	},
 	"devDependencies": {

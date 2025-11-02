@@ -18,6 +18,8 @@
   "exclude": [
     "node_modules",
     "_esm",
-    "_types"
+    "_types",
+    "**/*.test.ts",
+    "../test"
   ]
 }

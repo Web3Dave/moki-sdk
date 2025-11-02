@@ -1,4 +1,4 @@
-import { Persistor } from "./types.js"
+import { Persistor } from "./types"
 
 /**
  * Creates an in-memory persistor.
