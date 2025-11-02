@@ -3,7 +3,8 @@
 		"dev:react-chat": "pnpm --filter moki-sdk dev & pnpm --filter react-chat dev",
 		"dev": "pnpm --filter moki-sdk dev",
 		"build": "pnpm --filter moki-sdk build",
-		"size": "pnpm build && size-limit"
+		"size": "pnpm build && size-limit",
+		"size:minified": "pnpm build && esbuild src/_esm/index.js --bundle --minify --format=esm --external:viem --external:@noble/curves --external:scale-ts --outfile=.size-test.js && ls -lh .size-test.js && gzip -c .size-test.js | wc -c | awk '{printf \"Gzipped: %.2f KB\\n\", $1/1024}' && brotli -c .size-test.js | wc -c | awk '{printf \"Brotli: %.2f KB\\n\", $1/1024}' && rm .size-test.js"
 	},
 	"devDependencies": {
 		"@size-limit/file": "^11.2.0",
