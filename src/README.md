@@ -45,5 +45,5 @@ Browser wallet support coming soon...
 
 ## Documentation
 
-Head over to [docs.moki.network](https://docs.moki.network) to get started and learn more about Moki.
+Head over to [docs.moki.network](https://docs.moki.network/moki-network/overview) to get started and learn more about Moki.
 

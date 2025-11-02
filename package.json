@@ -1,18 +1,29 @@
 {
 	"scripts": {
-		"dev:react-chat": "pnpm --filter moki dev & pnpm --filter react-chat dev",
-		"dev": "pnpm --filter moki dev",
-		"build": "pnpm --filter moki build",
+		"dev:react-chat": "pnpm --filter moki-sdk dev & pnpm --filter react-chat dev",
+		"dev": "pnpm --filter moki-sdk dev",
+		"build": "pnpm --filter moki-sdk build",
 		"size": "pnpm build && size-limit"
 	},
 	"devDependencies": {
-		"@size-limit/preset-small-lib": "^11.2.0",
+		"@size-limit/file": "^11.2.0",
 		"size-limit": "^11.2.0",
 		"typescript": "5.9.3"
 	},
 	"size-limit": [
 		{
-			"path": "src/_esm/index.js",
+			"name": "Full Moki SDK",
+			"path": "src/_esm/**/*.js",
+			"limit": "100 KB"
+		},
+		{
+			"name": "Scale module",
+			"path": "src/_esm/scale/**/*.js",
+			"limit": "15 KB"
+		},
+		{
+			"name": "Utils module",
+			"path": "src/_esm/utils/**/*.js",
 			"limit": "10 KB"
 		}
 	]
