@@ -15,10 +15,9 @@
 - **Lightweight & Fast** - Only 2.2 kB minified + compressed (brotli), or 10.6 kB compiled source (tree-shakeable)
 - **End-to-End Encryption** - Secure messaging with AES-GCM encryption
 - **EVM Wallet Native** - Built specifically for Ethereum-based wallets
-- **No Browser Wallet Required** - Generate temporary wallets in localStorage for seamless web integration
+- **No Browser Wallet Required** - Generate temporary wallets in localStorage for temporary visitors
 - **Delegate Wallet Support** - Keep your main wallet safe, use a delegate for message signing
-- **Wallet-to-Wallet Messaging** - Direct encrypted communication between any two EVM wallets
-- **Simple Integration** - Easy to integrate into existing web3 applications
+- **Simple Integration** - Easy to integrate into existing applications
 
 ## Overview
 
