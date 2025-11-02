@@ -1,0 +1,1 @@
+export { createMemoryPersistor } from "./memory.js"

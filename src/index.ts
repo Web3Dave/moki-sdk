@@ -1,0 +1,1 @@
+export const TEST_NET_RPC = "https://moki-node.pingify.io"

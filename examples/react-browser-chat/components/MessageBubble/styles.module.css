@@ -1,0 +1,42 @@
+.messageBubbleContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px 0 12px;
+    box-sizing: border-box;
+}
+.messageSender .messageBubble{
+    --border-radius: 20px;
+    align-self: flex-end;
+    border-radius: var(--border-radius) var(--border-radius) 0px var(--border-radius);
+}
+.messageRecipient .messageBubble{
+    --border-radius: 20px;
+    align-self: flex-start;
+    border-radius: var(--border-radius) var(--border-radius) var(--border-radius) 0px;
+}
+.messageBubble{
+    --line-height: 20px;
+    min-height: var(--line-height);
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    max-width: 70%;
+    min-width: 100px;
+    padding: 12px 16px;
+    line-height: var(--line-height);
+    border-radius: 10px;
+    font-size: 16px;
+}
+.messageTimestamp{
+    display: block;
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+    padding-top: 4px;
+}
+.messageSender .messageTimestamp{
+    text-align: right;
+}
+.messageRecipient .messageTimestamp{
+    text-align: left;
+}

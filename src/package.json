@@ -1,0 +1,66 @@
+{
+  "name": "moki",
+  "version": "0.0.0",
+  "description": "Moki SDK",
+  "type": "module",
+  "module": "./_esm/index.js",
+  "types": "./_types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./_types/index.d.ts",
+      "import": "./_esm/index.js"
+    },
+    "./accounts": {
+      "types": "./_types/accounts/index.d.ts",
+      "import": "./_esm/accounts/index.js"
+    },
+    "./core": {
+      "types": "./_types/core/index.d.ts",
+      "import": "./_esm/core/index.js"
+    },
+    "./data": {
+      "types": "./_types/data/index.d.ts",
+      "import": "./_esm/data/index.js"
+    },
+    "./messaging": {
+      "types": "./_types/messaging/index.d.ts",
+      "import": "./_esm/messaging/index.js"
+    },
+    "./provider": {
+      "types": "./_types/provider/index.d.ts",
+      "import": "./_esm/provider/index.js"
+    },
+    "./persistor": {
+      "types": "./_types/persistor/index.d.ts",
+      "import": "./_esm/persistor/index.js"
+    },
+    "./utils": {
+      "types": "./_types/utils/index.d.ts",
+      "import": "./_esm/utils/index.js"
+    },
+    "./types": {
+      "types": "./_types/types/index.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Test script not configured yet\""
+  },
+  "packageManager": "pnpm@10.20.0",
+  "keywords": [
+    "moki",
+    "sdk"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@noble/curves": "~1.9.0",
+    "scale-ts": "^1.6.1",
+    "viem": "^2.38.6"
+  }
+}

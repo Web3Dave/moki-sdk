@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"example:browser-chat": "pnpm --filter react-browser-chat dev",
+		"dev": "pnpm --filter moki dev & pnpm --filter react-browser-chat dev",
+		"build": "pnpm --filter moki build"
+	},
+	"devDependencies": {
+		"typescript": "5.9.3"
+	}
+}
