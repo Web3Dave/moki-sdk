@@ -1,11 +1,11 @@
 {
 	"scripts": {
-		"dev:react-chat": "pnpm --filter moki-sdk dev & pnpm --filter react-chat dev",
-		"dev": "pnpm --filter moki-sdk dev",
-		"build": "pnpm --filter moki-sdk build",
-		"build:bundle": "pnpm --filter moki-sdk build:bundle",
-		"test": "pnpm --filter moki-sdk test",
-		"test:cov": "pnpm --filter moki-sdk test:cov",
+		"dev:react-chat": "pnpm --filter @moki-chat/core dev & pnpm --filter react-chat dev",
+		"dev": "pnpm --filter @moki-chat/core dev",
+		"build": "pnpm --filter @moki-chat/core build",
+		"build:bundle": "pnpm --filter @moki-chat/core build:bundle",
+		"test": "pnpm --filter @moki-chat/core test",
+		"test:cov": "pnpm --filter @moki-chat/core test:cov",
 		"size": "pnpm build && pnpm build:bundle && size-limit"
 	},
 	"devDependencies": {

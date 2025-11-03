@@ -1,7 +1,7 @@
 {
-  "name": "moki-sdk",
-  "version": "0.0.0",
-  "description": "Moki SDK",
+  "name": "@moki-chat/core",
+  "version": "0.1.0",
+  "description": "Core SDK for Moki Chat - Web3 messaging and chat protocol",
   "type": "module",
   "module": "./_esm/index.js",
   "types": "./_types/index.d.ts",
@@ -58,10 +58,29 @@
   "packageManager": "pnpm@10.20.0",
   "keywords": [
     "moki",
-    "sdk"
+    "moki-chat",
+    "sdk",
+    "web3",
+    "chat",
+    "messaging",
+    "ethereum",
+    "blockchain"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Web3Daveloper",
+    "url": "https://github.com/Web3Dave"
+  },
+  "contributors": [
+    {
+      "name": "Web3Daveloper",
+      "url": "https://github.com/Web3Dave"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Web3Dave/moki-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/Web3Dave/moki-sdk/issues"
+  },
   "dependencies": {
     "@noble/curves": "~1.9.0",
     "@vitest/coverage-v8": "^4.0.6",
@@ -71,5 +90,9 @@
   "devDependencies": {
     "tsup": "^8.5.0",
     "vitest": "^4.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Web3Dave/moki-sdk"
   }
 }

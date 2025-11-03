@@ -1,11 +1,11 @@
 "use client";
 
-import { privateKeyToMokiAccount } from 'moki-sdk/accounts'
+import { privateKeyToMokiAccount } from '@moki-chat/core/accounts'
 
-import { createMessageClient } from 'moki-sdk/messaging'
-import { createProvider } from 'moki-sdk/provider'
+import { createMessageClient } from '@moki-chat/core/messaging'
+import { createProvider } from '@moki-chat/core/provider'
 import styles from "./styles.module.css"
-import { MokiMessage } from 'moki-sdk/types/message';
+import { MokiMessage } from '@moki-chat/core/types/message';
 import { useEffect, useMemo, useState } from 'react';
 import { MessageBubble } from '../../components/MessageBubble';
 import { FaChevronLeft } from "react-icons/fa";

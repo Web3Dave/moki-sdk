@@ -20,12 +20,12 @@ importers:
 
   examples/react-chat:
     dependencies:
+      '@moki-chat/core':
+        specifier: latest
+        version: link:../../src
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
-      moki-sdk:
-        specifier: latest
-        version: link:../../src
       next:
         specifier: ^16.0.1
         version: 16.0.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
