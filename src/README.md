@@ -8,7 +8,12 @@
 </p>
 <p align="center">
   Fast, Light-weight, SDK for Web3 chat <a href="https://moki.chat">Moki.Chat</a>
-<p>
+</p>
+<p align="center">
+<a href="https://codecov.io/github/Web3Dave/moki-sdk" > 
+ <img src="https://codecov.io/github/Web3Dave/moki-sdk/branch/main/graph/badge.svg?token=BP79W738ZH"/> 
+ </a>
+</p>
 
 ## Features
 
