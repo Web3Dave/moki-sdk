@@ -5,3 +5,4 @@ _esm
 _types
 dist
 src/coverage
+.DS_Store
