@@ -10,9 +10,28 @@
   Fast, Light-weight, SDK for Web3 chat <a href="https://moki.chat">Moki.Chat</a>
 </p>
 <p align="center">
-<a href="https://codecov.io/github/Web3Dave/moki-sdk" > 
- <img src="https://codecov.io/github/Web3Dave/moki-sdk/branch/main/graph/badge.svg?token=BP79W738ZH"/> 
+<a href="https://www.npmjs.com/package/@moki-chat/core">
+ <img src="https://img.shields.io/npm/v/@moki-chat/core"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/Web3Dave/moki-sdk/blob/main/LICENSE">
+ <img src="https://img.shields.io/npm/l/@moki-chat/core"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/Web3Dave/moki-sdk/issues">
+ <img src="https://img.shields.io/github/issues/Web3Dave/moki-sdk"/>
+</a>
+<a href="https://bundlephobia.com/package/@moki-chat/core" >
+ <img src="https://img.shields.io/bundlephobia/minzip/@moki-chat/core"/>
  </a>
+&nbsp;&nbsp;
+<a href="https://codecov.io/github/Web3Dave/moki-sdk" >
+ <img src="https://codecov.io/github/Web3Dave/moki-sdk/branch/main/graph/badge.svg?token=BP79W738ZH"/>
+ </a>
+ &nbsp;&nbsp;
+<a href="https://github.com/Web3Dave/moki-sdk">
+ <img src="https://img.shields.io/github/stars/Web3Dave/moki-sdk"/>
+</a>
 </p>
 
 ## Features
