@@ -29,9 +29,9 @@
 Moki SDK can be used with a localStorage key (for example: temporary web users)
 ```ts
 // 1. Import modules.
-import { privateKeyToMokiAccount } from 'moki-sdk/accounts'
-import { createMessageClient } from 'moki-sdk/messaging'
-import { createProvider } from 'moki-sdk/provider'
+import { privateKeyToMokiAccount } from '@moki/core/accounts'
+import { createMessageClient } from '@moki/core/messaging'
+import { createProvider } from '@moki/core/provider'
 
 // 2. Set up your message client.
 const provider = createProvider("https://moki-node.pingify.io");
