@@ -7,7 +7,7 @@
     </a>
 </p>
 <p align="center">
-  Fast, Light-weight, SDK for Web3 chat <a href="https://moki.chat">Moki.Chat</a>
+  Fast, Light-weight, SDK for Web3 chat
 </p>
 <p align="center">
 <a href="https://www.npmjs.com/package/@moki-chat/core">
@@ -64,5 +64,5 @@ Browser wallet support coming soon...
 
 ## Documentation
 
-Head over to [the docs](https://docs.moki.network/moki-network/overview) to get started and learn more about Moki.
+Head over to [the docs](https://docs.moki.chat/sdk/getting-started) to get started and learn more about Moki.
 
