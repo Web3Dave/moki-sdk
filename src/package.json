@@ -52,6 +52,7 @@
     "build:bundle": "tsup index.ts --format esm --dts --minify --external viem --external @noble/curves --external scale-ts",
     "dev": "tsc --watch",
     "test": "vitest --config ../vitest.config.ts",
+    "test:cov": "vitest --config ../vitest.config.ts --coverage",
     "test:ui": "vitest --config ../vitest.config.ts --ui"
   },
   "packageManager": "pnpm@10.20.0",
@@ -63,6 +64,7 @@
   "license": "ISC",
   "dependencies": {
     "@noble/curves": "~1.9.0",
+    "@vitest/coverage-v8": "^4.0.6",
     "scale-ts": "^1.6.1",
     "viem": "^2.38.6"
   },
