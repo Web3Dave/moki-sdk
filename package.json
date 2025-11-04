@@ -1,4 +1,7 @@
 {
+	"engines": {
+		"node": ">=20.0.0"
+	},
 	"scripts": {
 		"dev:react-chat": "pnpm --filter @moki-chat/core dev & pnpm --filter react-chat dev",
 		"dev": "pnpm --filter @moki-chat/core dev",
