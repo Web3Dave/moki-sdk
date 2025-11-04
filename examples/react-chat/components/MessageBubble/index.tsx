@@ -1,4 +1,4 @@
-import { MokiMessage } from "moki/types/message";
+import { MokiMessage } from "@moki-chat/core/types";
 import styles from "./styles.module.css"
 import { format } from "date-fns"
 

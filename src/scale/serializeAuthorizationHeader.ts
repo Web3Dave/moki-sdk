@@ -1,3 +1,4 @@
+
 import { hexToBytes } from "viem/utils";
 import { authorizationHeaderCodec } from "./codec/authorizationHeader";
 

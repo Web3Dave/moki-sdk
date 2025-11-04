@@ -39,7 +39,8 @@
       "import": "./_esm/utils/index.js"
     },
     "./types": {
-      "types": "./_types/types/index.d.ts"
+      "types": "./_types/types/index.d.ts",
+      "import": "./_esm/types/index.js"
     }
   },
   "engines": {

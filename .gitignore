@@ -6,3 +6,4 @@ _types
 dist
 src/coverage
 .DS_Store
+examples/**/out

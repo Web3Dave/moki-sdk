@@ -21,8 +21,8 @@ importers:
   examples/react-chat:
     dependencies:
       '@moki-chat/core':
-        specifier: latest
-        version: 0.1.0(typescript@5.9.3)(vitest@4.0.6(@types/node@24.9.2)(jiti@2.6.1))(zod@3.25.76)
+        specifier: workspace:*
+        version: link:../../src
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
@@ -401,9 +401,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
-
-  '@moki-chat/core@0.1.0':
-    resolution: {integrity: sha512-d2a46AkcfJQ0cRab6zDIu/PwyrZ998gwlZdI7MiC97+154ZPWdtypRBw6+jA7MgZrjfMUz2kMtKaKPDIo40NMQ==}
 
   '@next/env@16.0.1':
     resolution: {integrity: sha512-LFvlK0TG2L3fEOX77OC35KowL8D7DlFF45C0OvKMC4hy8c/md1RC4UMNDlUGJqfCoCS2VWrZ4dSE6OjaX5+8mw==}
@@ -1530,21 +1527,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
-
-  '@moki-chat/core@0.1.0(typescript@5.9.3)(vitest@4.0.6(@types/node@24.9.2)(jiti@2.6.1))(zod@3.25.76)':
-    dependencies:
-      '@noble/curves': 1.9.1
-      '@vitest/coverage-v8': 4.0.6(vitest@4.0.6(@types/node@24.9.2)(jiti@2.6.1))
-      scale-ts: 1.6.1
-      viem: 2.38.6(typescript@5.9.3)(zod@3.25.76)
-    transitivePeerDependencies:
-      - '@vitest/browser'
-      - bufferutil
-      - supports-color
-      - typescript
-      - utf-8-validate
-      - vitest
-      - zod
 
   '@next/env@16.0.1': {}
 

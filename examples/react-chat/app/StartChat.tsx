@@ -27,6 +27,6 @@ export function StartChat() {
         <div className={styles.inputContainer}>
             <input className={styles.input} placeholder={"e.g. pingify"} value={username} onChange={(ev) => { setUsername(ev.target.value) }}></input>
         </div>
-        <Link href={`/${username}`} aria-disabled={username === ""} className={styles.button}>Chat with @{username}</Link>
+        <Link href={`/chat?username=${username}`} aria-disabled={username === ""} className={styles.button}>Chat with @{username}</Link>
     </main>
 }
