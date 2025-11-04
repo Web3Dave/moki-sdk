@@ -1,4 +1,4 @@
-name: Deploy React Chat to GitHub Pages
+name: Deploy Example to GH Pages
 
 on:
   push:

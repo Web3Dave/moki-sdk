@@ -62,6 +62,10 @@ await messageClient.sendMessage(username, "Hello World!");
 
 Browser wallet support coming soon...
 
+## Try out the Example
+
+The easiest way to currently test the message functionality of this SDK is by downloading the [Pingify app](https://pingify.io/download) and communicating directly with your Pingify @username using the [SDK Example Chat](https://web3dave.github.io/moki-sdk/)
+
 ## Documentation
 
 Head over to [the docs](https://docs.moki.chat/sdk/getting-started) to get started and learn more about Moki.
