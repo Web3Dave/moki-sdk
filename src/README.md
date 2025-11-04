@@ -66,7 +66,9 @@ Browser wallet support coming soon...
 
 The easiest way to currently test the message functionality of this SDK is by downloading the [Pingify app](https://pingify.io/download) and communicating directly with your Pingify @username using the [SDK Example Chat](https://web3dave.github.io/moki-sdk/)
 
- <img src="https://raw.githubusercontent.com/Web3Dave/moki-sdk/main/.github/example-chat.gif" width="auto" height="800"/>
+<p align="center">
+ <img src="https://raw.githubusercontent.com/Web3Dave/moki-sdk/main/.github/example-chat.gif" width="auto" height="500"/>
+ </p>
 
 ## Documentation
 
