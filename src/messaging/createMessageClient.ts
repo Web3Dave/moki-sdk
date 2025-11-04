@@ -124,14 +124,17 @@ export function createMessageClient(provider: MokiProvider, options: MessageClie
                             // Update latestMessageId to avoid refetching
                             latestMessageId = latestChatResponse.data[0].id;
 
-                            for (let message of latestChatResponse.data) {
+                            const decryptionPromises = latestChatResponse.data.reverse().map(async (message) => {
                                 try {
-                                    const decryptedMessage = await decryptRPCMessage(ecdhSecret, message);
-                                    decryptedMessages.push(decryptedMessage);
+                                    return await decryptRPCMessage(ecdhSecret, message);
                                 } catch (error) {
                                     console.error("Error decrypting message:", error);
+                                    return null;
                                 }
-                            }
+                            });
+
+                            const results = await Promise.all(decryptionPromises);
+                            decryptedMessages.push(...results.filter((msg): msg is MokiMessage => msg !== null));
 
                             if (decryptedMessages.length > 0) {
                                 onMessageReceived(decryptedMessages);
