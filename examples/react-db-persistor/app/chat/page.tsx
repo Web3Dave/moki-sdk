@@ -1,5 +1,5 @@
-import Chat from "./Chat";
+import Wrapper from "./Wrapper";
 
 export default function Page() {
-    return <Chat />
+    return <Wrapper />
 }

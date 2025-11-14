@@ -17,7 +17,7 @@ export default defineConfig({
     environment: 'node',
     include: ['**/*.test.ts'],
     exclude: ['**/node_modules/**', '**/_esm/**', '**/_types/**', '**/dist/**'],
-    root: join(__dirname, 'src'),
+    root: join(__dirname, 'packages/core'),
     testTimeout: 10_000,
   },
 })

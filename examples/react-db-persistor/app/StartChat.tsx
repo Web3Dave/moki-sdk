@@ -3,9 +3,12 @@
 import { useState } from "react"
 import styles from "./styles.module.css"
 import Link from "next/link"
+import { useExampleHook } from "@moki-chat/react"
 
 export function StartChat() {
     const [username, setUsername] = useState("")
+    const example = useExampleHook();
+    console.log("example:", example)
     return <main className={styles.main}>
         <h1 className={styles.title}>Select Chat</h1>
         <div className={styles.notice}>

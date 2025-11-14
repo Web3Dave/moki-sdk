@@ -1,8 +1,8 @@
-import { privateKeyToMokiAccount } from '../src/accounts/privateKeyToMokiAccount'
-import { MokiRPCIdentity } from '../src/types/identity'
-import { CHAIN_ID, OP_CODE } from "../src/enum"
-import { MokiAccount } from '../src/accounts/types'
-import { compressPublicKey } from '../src/utils/compressPublicKey'
+import { privateKeyToMokiAccount } from '../packages/core/accounts/privateKeyToMokiAccount'
+import { MokiRPCIdentity } from '../packages/core/types/identity'
+import { CHAIN_ID, OP_CODE } from "../packages/core/enum"
+import { MokiAccount } from '../packages/core/accounts/types'
+import { compressPublicKey } from '../packages/core/utils/compressPublicKey'
 /**
  * Test account private keys (from Hardhat's default accounts)
  */

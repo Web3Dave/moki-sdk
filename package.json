@@ -3,8 +3,9 @@
 		"node": ">=20.0.0"
 	},
 	"scripts": {
-		"dev:react-chat": "pnpm --filter @moki-chat/core dev & pnpm --filter react-chat dev",
 		"dev": "pnpm --filter @moki-chat/core dev",
+		"dev:react-db-persistor": "pnpm --filter @moki-chat/core dev & pnpm --filter @moki-chat/react dev & pnpm --filter react-db-persistor dev",
+		"dev:react-chat": "pnpm --filter @moki-chat/core dev & pnpm --filter react-chat dev",
 		"build": "pnpm --filter @moki-chat/core build",
 		"build:bundle": "pnpm --filter @moki-chat/core build:bundle",
 		"test": "pnpm --filter @moki-chat/core test",
@@ -19,12 +20,12 @@
 	"size-limit": [
 		{
 			"name": "Full SDK (minified bundle)",
-			"path": "src/dist/index.js",
+			"path": "packages/core/dist/index.js",
 			"limit": "3 KB"
 		},
 		{
 			"name": "Full SDK (unminified)",
-			"path": "src/_esm/**/*.js",
+			"path": "packages/core/_esm/**/*.js",
 			"limit": "15 KB"
 		}
 	]

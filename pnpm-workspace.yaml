@@ -1,3 +1,6 @@
 packages:
-  - 'examples/*'
-  - 'src'
+  - 'examples/react-chat'
+  - 'examples/react-db-persistor'
+  - 'packages/core'
+  - 'packages/react'
+  - 'packages/persistor-sqlite'
